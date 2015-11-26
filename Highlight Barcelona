@@ -1,0 +1,69 @@
+  </script>
+</div><br><br>Full Highlight <div  style='width:700px;background:#000'>            
+<div id='jw_2'></div>
+
+
+<script type="text/javascript">
+
+jwplayer('jw_2').setup({
+    'id': 'jw_2',
+    'flashplayer': 'http://www.hugball.com/new_player/jwplayer.flash.swf',
+    'file': 'http://dl-soccer.one2up.com/14-11-2015/Real94BarH.mp4',
+    'width': '700',
+    'height': '520',
+    'autostart': false,
+	'controlbar': 'bottom',
+	'config': 'iap_config.xml',
+	'plugins': 'http://media.innityserve.net/plugin/new/InnityAdsPlugin.swf',	
+	'skin': "http://image.hugball.com/player/modieus.zip",
+    'image': 'http://image.hugball.com/hugballhighlight.png',	
+    'skin': 'http://image.hugball.com/player/modieus.zip',
+    'plugins': {
+        'gapro-2': {
+            'trackstarts': 'true',
+            'trackpercentage': 'false',
+            'tracktime': 'true'
+        }
+    },
+    'events': {
+        'onComplete': function() {
+            document.getElementById("end_screen").style.display = "block";
+        },
+        'onPlay': function() {
+            document.getElementById("end_screen").style.display = "none";
+        }
+    },
+    'modes': [
+        {
+        'type': 'flash',
+        'src': 'http://www.hugball.com/new_player/jwplayer.flash.swf'},
+    {
+        'type': 'html5',
+        'config': {
+            'levels': [
+                {
+                'file': 'http://dl-soccer.one2up.com/14-11-2015/Real94BarH.mp4'}
+            ]
+        }},
+    {
+        'type': 'download',
+        'config': {
+            'file': 'http://dl-soccer.one2up.com/14-11-2015/Real94BarH.mp4',
+            'provider': 'video'
+        }}
+    ]
+
+});
+ /*
+jwplayer('jw_2').setup({
+    'flashplayer': 'http://www.hugball.com/new_player/jwplayer.flash.swf',
+    'id': 'jw_2',
+    'width': '700',
+    'height': '520',
+    'config': 'iap_config.xml',
+	 'controlbar': 'bottom',
+    'plugins': 'http://plugin.innity.net/jw/InnityAdsPlugin.swf',	
+	'skin': "http://image.hugball.com/player/modieus.zip",
+    'file': ' http://dl-soccer.one2up.com/14-11-2015/Real94BarH.mp4'
+  });
+  */
